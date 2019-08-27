@@ -1,5 +1,5 @@
 {% set name = "domovoi" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: c9d8d7f670bedaac86514a0e6e479be6cb120e70c8497f9eb3cfab587bc72b79
+    sha256: 19bced61ed9cd9fa725f53ae6e903b7ddb7a4dde06960e9b720d38db52e8193e
   - url: https://raw.githubusercontent.com/kislyuk/{{ name }}/v{{ version }}/LICENSE
     sha256: a8ad31b1c3f40dca5a84119351b8fa8ddc868edd77fad8a8ebf6d8f2d16fa4ae
 
