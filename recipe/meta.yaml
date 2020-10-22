@@ -30,6 +30,10 @@ test:
     - domovoi
   commands:
     - domovoi --help
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/kislyuk/domovoi
