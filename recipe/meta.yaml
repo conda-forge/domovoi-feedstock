@@ -12,7 +12,7 @@ source:
     sha256: a8ad31b1c3f40dca5a84119351b8fa8ddc868edd77fad8a8ebf6d8f2d16fa4ae
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: True  # [win or py27]
 
@@ -30,6 +30,11 @@ test:
     - domovoi
   commands:
     - domovoi --help
+  # pip check is not smart enough to deal with pip owns dependency pin in chalice :-(
+  # commands:
+  #   - pip check
+  # requires:
+  #   - pip
 
 about:
   home: https://github.com/kislyuk/domovoi
